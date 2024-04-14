@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = "Hexlet project 2 (python-project-50)"
+authors = ["Konstantin Sereda <konst.sereda@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
