@@ -2,7 +2,14 @@
 # from brain_games.game_launcher import game_launcher
 import argparse
 
-parser = argparse.ArgumentParser(add_help=False)
+parser = argparse.ArgumentParser(add_help=False,
+                    prog='gendiff',
+                    description='Compares two configuration files and shows a difference.',
+                    epilog='epilog')
+
+parser.add_argument('first_file', help='')
+
+parser.add_argument('second_file', help='')
 
 parser.add_argument('-v', '--version', action='version',
                     version='%(prog)s 1.0', help="Show program's version number and exit.")
