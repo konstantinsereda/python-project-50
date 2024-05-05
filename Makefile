@@ -14,6 +14,8 @@ build:
 	poetry version --next-phase 0.1.0
 	poetry build
 
+test:
+	poetry run pytest
 
 publish:
 	poetry publish --dry-run
