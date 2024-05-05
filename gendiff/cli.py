@@ -1,7 +1,7 @@
 import argparse
 
 
-def parse():
+def parse(argv=None):
     parser = argparse.ArgumentParser(add_help=False,
                                      prog='gendiff',
                                      description='Compares two configuration '
@@ -16,4 +16,4 @@ def parse():
                         help='Show this help message and exit.')
     parser.add_argument('-f', '--format', default=argparse.SUPPRESS,
                         help='set format of output')
-    return parser.parse_args()
+    return parser.parse_args(argv)
