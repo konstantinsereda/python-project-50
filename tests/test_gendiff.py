@@ -5,13 +5,13 @@ from gendiff.scripts.gendiff import generate_diff
 def test_flat_json():
     # with pytest.raises(ValueError) as error:
     #     error(int(1))ё
-    file_output = open('/Users/konst/Hexlet/python-project-50/tests/fixtures/output.txt', 'w')
-    file_output.write(generate_diff('/Users/konst/Hexlet/python-project-50/tests/fixtures/file1.json',
-                           '/Users/konst/Hexlet/python-project-50/tests/fixtures/file2.json'))
+    file_output = open('tests/fixtures/output.txt', 'w')
+    file_output.write(generate_diff('tests/fixtures/file1.json',
+                           'tests/fixtures/file2.json'))
     file_output.close()
 
-    result_testing_func = '/Users/konst/Hexlet/python-project-50/tests/fixtures/output.txt'
-    correct_output = '/Users/konst/Hexlet/python-project-50/tests/fixtures/correct_output'
+    result_testing_func = 'tests/fixtures/output.txt'
+    correct_output = 'tests/fixtures/correct_output'
     assert filecmp.cmp(result_testing_func, correct_output)
 
 
