@@ -18,6 +18,8 @@ options:
                         set format of output
 
 
-
+json parsing example
 [![asciicast](https://asciinema.org/a/KwxAzfXF89KdiLeCtHLC7RwIA.svg)](https://asciinema.org/a/KwxAzfXF89KdiLeCtHLC7RwIA)
 
+yaml parsing example 
+[![asciicast](https://asciinema.org/a/fdvs1nk5KMx5Y6qRiR26D1drl.svg)](https://asciinema.org/a/fdvs1nk5KMx5Y6qRiR26D1drl)
