@@ -16,6 +16,15 @@ def test_flat_json():
     correct_output = 'tests/fixtures/correct_output'
     assert filecmp.cmp(result_testing_func, correct_output)
 
+def test_cascaded_json():
+    file_output = open('tests/fixtures/output.txt', 'w')
+    file_output.write(generate_diff('tests/fixtures/file_cascaded1.json',
+                                    'tests/fixtures/file_cascaded2.json'))
+    file_output.close()
+    result_testing_func = 'tests/fixtures/output.txt'
+    correct_output = 'tests/fixtures/correct_output_cascaded'
+    assert filecmp.cmp(result_testing_func, correct_output)
+
 
 def test_flat_yaml():
     file_output = open('tests/fixtures/output.txt', 'w')
