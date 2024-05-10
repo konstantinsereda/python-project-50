@@ -1,11 +1,10 @@
 from gendiff.cli import parse
-import json
+from gendiff.file_parcer import get_data
 
 
 def generate_diff(file_path1, file_path2):
-    with open(file_path1) as file1, open(file_path2) as file2:
-        data1 = json.load(file1)
-        data2 = json.load(file2)
+    data1 = get_data(file_path1)
+    data2 = get_data(file_path2)
 
     keys = sorted(set(data1.keys()) | set(data2.keys()))
 
